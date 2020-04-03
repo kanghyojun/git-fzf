@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+
+GIT_OPTS=""
+git switch "$(git branch | fzf | sed -e 's/^[[:space:]]*//')";
